@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{92C969F4-E15B-A013-6239-6D055E070C24}") = "TouchDash", "Assembly-CSharp-firstpass-vs.csproj", "{035B39A6-1F22-3CB0-A2B3-6E036E57D20C}"
+EndProject
 Project("{92C969F4-E15B-A013-6239-6D055E070C24}") = "TouchDash", "Assembly-CSharp-vs.csproj", "{3A46ACA3-B089-8CA1-4DBF-BF8E2FEE7631}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{035B39A6-1F22-3CB0-A2B3-6E036E57D20C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035B39A6-1F22-3CB0-A2B3-6E036E57D20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035B39A6-1F22-3CB0-A2B3-6E036E57D20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035B39A6-1F22-3CB0-A2B3-6E036E57D20C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A46ACA3-B089-8CA1-4DBF-BF8E2FEE7631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3A46ACA3-B089-8CA1-4DBF-BF8E2FEE7631}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A46ACA3-B089-8CA1-4DBF-BF8E2FEE7631}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																			GlobalSection(MonoDevelopProperties) = preSolution
+																																												GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

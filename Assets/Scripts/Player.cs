@@ -7,7 +7,8 @@ public class Player : MonoBehaviour {
 	protected float attackingSpeed;
 	protected Sprite attackEffect;
 
-	public void Move(){
+	void Update(){
 
 	}
+
 }

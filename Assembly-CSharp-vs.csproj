@@ -47,7 +47,15 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BackGround.cs" />
+     <Compile Include="Assets\Scripts\Monster.cs" />
+     <Compile Include="Assets\Scripts\MonsterGeneraotr.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerParty.cs" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{035B39A6-1F22-3CB0-A2B3-6E036E57D20C}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BackGround : MonoBehaviour {
 
-	private  float speed = 0.1f;
+	public  float speed = 0.1f;
 	private  float offset;
 	void Update () {
 		offset += Time.deltaTime * speed;
