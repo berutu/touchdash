@@ -16,6 +16,8 @@ public class PlayerParty : MonoBehaviour {
 	public Vector2 offset;
 	public int stamina;
 	public float axisValue;
+	public float edgeLeft;
+	public float edgeRight;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +25,9 @@ public class PlayerParty : MonoBehaviour {
 		FormationChange();
 		offset = new Vector2 (0f, 0f);
 		stamina = MAXSTAMINA;
+		edgeLeft = GameObject.Find("Main Camera").camera.ViewportToWorldPoint (new Vector3 (0, 0, 0)).x;
+		edgeRight = GameObject.Find("Main Camera").camera.ViewportToWorldPoint (new Vector3 (1, 1, 0)).x;
+		Debug.Log (edgeLeft + ", " + edgeRight);
 	}
 	
 	// Update is called once per frame
@@ -58,11 +63,13 @@ public class PlayerParty : MonoBehaviour {
 	}
 
 	public void Left(){
-		offset.x -= SIDESPEED;
+		if(offset.x >= edgeLeft)
+			offset.x -= SIDESPEED;
 	}
 
 	public void Right(){
-		offset.x += SIDESPEED;
+		if(offset.x <= edgeRight)
+			offset.x += SIDESPEED;
 	}
 
 	public void FormationChange(){
