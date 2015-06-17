@@ -1,12 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Monster\GoblinRare.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerParty.cs">
     <Files>
-      <File FileName="Assets\Scripts\Monster\Bee.cs" Line="18" Column="64" />
-      <File FileName="Assets\Scripts\Monster\Fairy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Monster\Goblin.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Monster\MonsterBase.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Monster\GoblinRare.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerParty.cs" Line="74" Column="1" />
+      <File FileName="Assets\Scripts\PlayerParty.cs" Line="10" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
