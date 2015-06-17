@@ -6,12 +6,16 @@ public class PlayerParty : MonoBehaviour {
 	public const int MAXSTAMINA = 1000;
 	public const float FORWARDSPEED = 0.02f;
 	public const float BACKSPEED = 0.01f;
+	public const float SIDESPEED = 0.02f;
 	public const float CHANGETIME = 0.01f;
 	public const int RECEDESTAMINA = 3;
+	public const float AXISTHRESHOLD = 0.3f;
+
 
 	public int membership;
 	public Vector2 offset;
 	public int stamina;
+	public float axisValue;
 
 	// Use this for initialization
 	void Start () {
@@ -29,12 +33,17 @@ public class PlayerParty : MonoBehaviour {
 			Back ();
 		}
 
+		if (Input.GetAxis ("Horizontal") >= AXISTHRESHOLD) {
+			Right ();
+		} else if (Input.GetAxis ("Horizontal") <= -AXISTHRESHOLD) {
+			Left ();
+		}
+
 		if (membership != transform.childCount) {
 			membership = transform.childCount;
 			FormationChange();		
 		}
 		transform.position = new Vector3 (offset.x, offset.y, 0f);
-		Debug.Log (stamina);
 	}
 
 	public void Forward(){
@@ -46,6 +55,14 @@ public class PlayerParty : MonoBehaviour {
 		offset.y -= BACKSPEED;
 		if(stamina <= MAXSTAMINA)
 			stamina++;
+	}
+
+	public void Left(){
+		offset.x -= SIDESPEED;
+	}
+
+	public void Right(){
+		offset.x += SIDESPEED;
 	}
 
 	public void FormationChange(){
