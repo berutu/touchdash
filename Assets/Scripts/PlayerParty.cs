@@ -4,11 +4,12 @@ using System.Collections;
 public class PlayerParty : MonoBehaviour {
 
 	public const int MAXSTAMINA = 1000;
-	public const float FORWARDSPEED = 0.02f;
-	public const float BACKSPEED = 0.01f;
+	public const int MINNECESSARYSTAMINA = 200;
+	public const float FORWARDSPEED = 0.03f;
+	public const float BACKSPEED = 0.02f;
 	public const float SIDESPEED = 0.02f;
 	public const float CHANGETIME = 0.01f;
-	public const int RECEDESTAMINA = 3;
+	public const int RECEDESTAMINA = 5;
 	public const float AXISTHRESHOLD = 0.3f;
 
 
@@ -27,7 +28,6 @@ public class PlayerParty : MonoBehaviour {
 		stamina = MAXSTAMINA;
 		edgeLeft = GameObject.Find("Main Camera").camera.ViewportToWorldPoint (new Vector3 (0, 0, 0)).x;
 		edgeRight = GameObject.Find("Main Camera").camera.ViewportToWorldPoint (new Vector3 (1, 1, 0)).x;
-		Debug.Log (edgeLeft + ", " + edgeRight);
 	}
 	
 	// Update is called once per frame
@@ -36,6 +36,8 @@ public class PlayerParty : MonoBehaviour {
 			Forward ();
 		} else if (offset.y >= 0f) {
 			Back ();
+		} else {
+			Stay ();
 		}
 
 		if (Input.GetAxis ("Horizontal") >= AXISTHRESHOLD) {
@@ -70,6 +72,11 @@ public class PlayerParty : MonoBehaviour {
 	public void Right(){
 		if(offset.x <= edgeRight)
 			offset.x += SIDESPEED;
+	}
+
+	public void Stay(){
+		if(stamina <= MAXSTAMINA)
+			stamina++;
 	}
 
 	public void FormationChange(){

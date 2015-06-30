@@ -1,15 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewBehaviourScript : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
+public class Happy: MonsterBase {
+	#region implemented abstract members of MonsterBase
+	public override void Move ()
+	{
+		throw new System.NotImplementedException ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public override void Attack ()
+	{
+		throw new System.NotImplementedException ();
 	}
+	public override void Damage ()
+	{
+		throw new System.NotImplementedException ();
+	}
+	public override void NockBack ()
+	{
+		throw new System.NotImplementedException ();
+	}
+	#endregion
+	
 }

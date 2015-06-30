@@ -25,7 +25,6 @@ public class MonsterGeneraotr : MonoBehaviour {
 	private IEnumerator Generate(){
 		while (true) {
 			enemy = (GameObject)Instantiate (Goblin, new Vector3 (Random.Range (EDGE_LEFT, EDGE_RIGHT), 6f, 0f), Quaternion.identity);
-
 			yield return new WaitForSeconds (generateInterval);
 		}
 	}

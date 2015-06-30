@@ -23,5 +23,15 @@ public class Bee : MonsterBase {
 		throw new System.NotImplementedException ();
 	}
 
+	public override void Damage ()
+	{
+		throw new System.NotImplementedException ();
+	}
+
+	public override void NockBack ()
+	{
+		throw new System.NotImplementedException ();
+	}
+
 	#endregion
 }

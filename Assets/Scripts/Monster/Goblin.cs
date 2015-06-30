@@ -22,5 +22,22 @@ public class Goblin : MonsterBase {
 		throw new System.NotImplementedException ();
 	}
 
+	public override void Damage ()
+	{
+		throw new System.NotImplementedException ();
+	}
+	
+	public override void NockBack ()
+	{
+		iTween.MoveTo (transform.gameObject, new Vector3(transform.position.x, transform.position.y + NOCKBACKDISTANCE), NOCKBACKTIME);
+	}
+
+	public void OnTriggerStay2D(Collider2D other){
+		Debug.Log("Collision");
+		//if (other.gameObject.transform.parent.gameObject != null && other.gameObject.transform.parent.gameObject.name == "PlayerParty") {
+		//	NockBack ();
+		//}
+	}
+
 	#endregion
 }
