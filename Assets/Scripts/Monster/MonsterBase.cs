@@ -2,6 +2,8 @@
 using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
+
 public abstract class MonsterBase : MonoBehaviour {
 
 	protected const float EDGE_LEFT = -3.0f;

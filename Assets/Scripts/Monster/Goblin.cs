@@ -32,11 +32,11 @@ public class Goblin : MonsterBase {
 		iTween.MoveTo (transform.gameObject, new Vector3(transform.position.x, transform.position.y + NOCKBACKDISTANCE), NOCKBACKTIME);
 	}
 
-	public void OnTriggerStay2D(Collider2D other){
+	public void OnTriggerEnter2D(Collider2D other){
 		Debug.Log("Collision");
-		//if (other.gameObject.transform.parent.gameObject != null && other.gameObject.transform.parent.gameObject.name == "PlayerParty") {
-		//	NockBack ();
-		//}
+		if (other.gameObject.tag == "Player") {
+			NockBack ();
+		}
 	}
 
 	#endregion
