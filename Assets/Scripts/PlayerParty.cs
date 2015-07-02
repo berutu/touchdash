@@ -26,8 +26,8 @@ public class PlayerParty : MonoBehaviour {
 		FormationChange();
 		offset = new Vector2 (0f, 0f);
 		stamina = MAXSTAMINA;
-		edgeLeft = GameObject.Find("Main Camera").camera.ViewportToWorldPoint (new Vector3 (0, 0, 0)).x;
-		edgeRight = GameObject.Find("Main Camera").camera.ViewportToWorldPoint (new Vector3 (1, 1, 0)).x;
+		edgeLeft = GameObject.Find("Main Camera").GetComponent<Camera>().ViewportToWorldPoint (new Vector3 (0, 0, 0)).x;
+		edgeRight = GameObject.Find("Main Camera").GetComponent<Camera>().ViewportToWorldPoint (new Vector3 (1, 1, 0)).x;
 	}
 	
 	// Update is called once per frame

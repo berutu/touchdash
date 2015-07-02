@@ -7,6 +7,6 @@ public class BackGround : MonoBehaviour {
 	private  float offset;
 	void Update () {
 		offset += Time.deltaTime * speed;
-		renderer.material.SetTextureOffset("_MainTex", new Vector2(0, offset));
+		GetComponent<Renderer>().material.SetTextureOffset("_MainTex", new Vector2(0, offset));
 	}
 }
