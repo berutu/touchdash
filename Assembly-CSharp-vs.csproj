@@ -54,8 +54,12 @@
      <Compile Include="Assets\Scripts\Monster\Harpy.cs" />
      <Compile Include="Assets\Scripts\Monster\MonsterBase.cs" />
      <Compile Include="Assets\Scripts\MonsterGeneraotr.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\PlayerParty.cs" />
+     <Compile Include="Assets\Scripts\Player\Darkelf.cs" />
+     <Compile Include="Assets\Scripts\Player\Fighter.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerBase.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerParty.cs" />
+     <Compile Include="Assets\Scripts\Player\Solider.cs" />
+     <Compile Include="Assets\Scripts\Player\Sorcerer.cs" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

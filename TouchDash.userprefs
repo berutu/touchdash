@@ -1,14 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Monster\Goblin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\Sorcerer.cs">
     <Files>
-      <File FileName="Assets\Scripts\Monster\Goblin.cs" Line="39" Column="4" />
-      <File FileName="Assets\Scripts\Monster\MonsterBase.cs" Line="4" Column="42" />
-      <File FileName="Assets\Scripts\MonsterGeneraotr.cs" Line="31" Column="2" />
-      <File FileName="Assets\Scripts\Monster\Bee.cs" Line="41" Column="3" />
-      <File FileName="Assets\Scripts\Monster\Fairy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Monster\GoblinRare.cs" Line="40" Column="3" />
-      <File FileName="Assets\Scripts\Monster\Harpy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\Sorcerer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\Fighter.cs" Line="4" Column="34" />
+      <File FileName="Assets\Scripts\MonsterGeneraotr.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Monster\MonsterBase.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
