@@ -33,7 +33,6 @@ public class Goblin : MonsterBase {
 	}
 
 	public void OnTriggerEnter2D(Collider2D other){
-		Debug.Log("Collision");
 		if (other.gameObject.tag == "Player") {
 			NockBack ();
 		}

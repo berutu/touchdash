@@ -46,6 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AttackEffect\EffectBase.cs" />
+     <Compile Include="Assets\Scripts\AttackEffect\Knock.cs" />
+     <Compile Include="Assets\Scripts\AttackEffect\Lance.cs" />
+     <Compile Include="Assets\Scripts\AttackEffect\MagicArrow.cs" />
+     <Compile Include="Assets\Scripts\AttackEffect\Thunder.cs" />
      <Compile Include="Assets\Scripts\BackGround.cs" />
      <Compile Include="Assets\Scripts\Monster\Bee.cs" />
      <Compile Include="Assets\Scripts\Monster\Fairy.cs" />
@@ -53,7 +58,6 @@
      <Compile Include="Assets\Scripts\Monster\GoblinRare.cs" />
      <Compile Include="Assets\Scripts\Monster\Harpy.cs" />
      <Compile Include="Assets\Scripts\Monster\MonsterBase.cs" />
-     <Compile Include="Assets\Scripts\MonsterGeneraotr.cs" />
      <Compile Include="Assets\Scripts\Player\Darkelf.cs" />
      <Compile Include="Assets\Scripts\Player\Fighter.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerBase.cs" />

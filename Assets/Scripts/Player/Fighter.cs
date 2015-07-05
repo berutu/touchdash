@@ -12,7 +12,15 @@ public class Fighter : PlayerBase{
 	}
 
 	#region implemented abstract members of PlayerBase
-
+	public override IEnumerator Attack ()
+	{
+		while (true) {
+			attackEffect.SetActive (true);
+			yield return new WaitForSeconds (attackingSpeed);
+			attackEffect.SetActive (false);
+			yield return new WaitForSeconds (intervalTime);
+		}
+	}
 
 	public override void Damage ()
 	{
