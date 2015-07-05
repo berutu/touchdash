@@ -24,10 +24,19 @@ public abstract class MonsterBase : MonoBehaviour {
 
 	public abstract void Move ();
 	public abstract void Attack ();
-	public virtual void Damage(){
-		Debug.Log("destory");
+	public abstract void NockBack();
+
+	public virtual IEnumerator Damage(){
+		NockBack();
+		for (int i = 0; i < 6; i++) {
+			if(i % 2 == 0)
+				GetComponent<SpriteRenderer> ().color = new Color(1, 0, 0, 1);
+			else
+				GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+			yield return new WaitForSeconds(0.05f);
+		}
+
 		Destroy (this.gameObject);
 	}
-	public abstract void NockBack();
 
 }

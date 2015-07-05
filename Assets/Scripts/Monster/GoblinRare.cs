@@ -22,7 +22,7 @@ public class GoblinRare : MonsterBase {
 		throw new System.NotImplementedException ();
 	}
 
-	public override void Damage ()
+	public override IEnumerator Damage ()
 	{
 		throw new System.NotImplementedException ();
 	}
