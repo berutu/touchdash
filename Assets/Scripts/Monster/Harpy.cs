@@ -11,14 +11,6 @@ public class Happy: MonsterBase {
 	{
 		throw new System.NotImplementedException ();
 	}
-	public override IEnumerator Damage ()
-	{
-		throw new System.NotImplementedException ();
-	}
-	public override void NockBack ()
-	{
-		throw new System.NotImplementedException ();
-	}
 	#endregion
 	
 }

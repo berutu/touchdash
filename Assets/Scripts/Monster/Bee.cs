@@ -23,16 +23,6 @@ public class Bee : MonsterBase {
 		throw new System.NotImplementedException ();
 	}
 
-	public override IEnumerator Damage ()
-	{
-		throw new System.NotImplementedException ();
-	}
-
-	public override void NockBack ()
-	{
-		throw new System.NotImplementedException ();
-	}
-
 	public void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Player") {
 			NockBack ();

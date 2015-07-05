@@ -24,7 +24,11 @@ public abstract class MonsterBase : MonoBehaviour {
 
 	public abstract void Move ();
 	public abstract void Attack ();
-	public abstract void NockBack();
+
+	public virtual void NockBack ()
+	{
+		iTween.MoveTo (transform.gameObject, new Vector3(transform.position.x, transform.position.y + NOCKBACKDISTANCE), NOCKBACKTIME);
+	}
 
 	public virtual IEnumerator Damage(){
 		NockBack();
@@ -37,6 +41,12 @@ public abstract class MonsterBase : MonoBehaviour {
 		}
 
 		Destroy (this.gameObject);
+	}
+
+	public virtual void OnTriggerEnter2D(Collider2D other){
+		if (other.gameObject.tag == "Player") {
+			NockBack ();
+		}
 	}
 
 }
