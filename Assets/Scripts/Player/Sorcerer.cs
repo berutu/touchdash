@@ -6,7 +6,7 @@ public class Sorcerer : PlayerBase {
 	// Use this for initialization
 	void Start () {
 		attackingSpeed = 0.35f;
-		intervalTime = 3.0f;
+		intervalTime = 5.0f;
 		StartCoroutine ("Attack");
 	}
 	

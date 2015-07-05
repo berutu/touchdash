@@ -2,7 +2,11 @@
 using System.Collections;
 
 public class Fairy : MonsterBase {
-	
+
+	void Start () {
+		moveSpeedX = 0.0f;
+		moveSpeedY = 0.0f;
+	}
 
 	#region implemented abstract members of MonsterBase
 
