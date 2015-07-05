@@ -24,7 +24,10 @@ public abstract class MonsterBase : MonoBehaviour {
 
 	public abstract void Move ();
 	public abstract void Attack ();
-	public abstract void Damage();
+	public virtual void Damage(){
+		Debug.Log("destory");
+		Destroy (this.gameObject);
+	}
 	public abstract void NockBack();
 
 }

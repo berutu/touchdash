@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Thunder : MonoBehaviour {
+public class Thunder : EffectBase {
 
 	// Use this for initialization
 	void Start () {

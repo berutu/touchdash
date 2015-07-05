@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Lance : MonoBehaviour {
+public class Lance : EffectBase {
 
 	// Use this for initialization
 	void Start () {

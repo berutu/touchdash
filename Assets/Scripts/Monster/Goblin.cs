@@ -22,10 +22,10 @@ public class Goblin : MonsterBase {
 		throw new System.NotImplementedException ();
 	}
 
-	public override void Damage ()
+	/*public override void Damage ()
 	{
 		throw new System.NotImplementedException ();
-	}
+	}*/
 	
 	public override void NockBack ()
 	{

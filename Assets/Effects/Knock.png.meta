@@ -1,6 +1,16 @@
 fileFormatVersion: 2
 guid: 990a3ae52e2b8004c98917c0556013ff
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Knock_0
+    21300002: Knock_1
+    21300004: Knock_2
+    21300006: Knock_3
+    21300008: Knock_4
+    21300010: Knock_5
+    21300012: Knock_6
+    21300014: Knock_7
+    21300016: Knock_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -19,6 +29,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -29,6 +42,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -134,3 +148,5 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
